@@ -1,0 +1,280 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixologist</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-icons.css">
+    <!-- Insert this within your head tag and after foundation.css -->
+  </head>
+  <body>
+
+    <!-- off canvas wrapper div -->
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+            <h3 class="text-center">Navigation</h3>
+            <ul class="menu vertical" data-drilldown>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div><!--off canvas -->
+
+    <div class="off-canvas-content" data-off-canvas-content>
+  	  <!-- video image -->
+      <section class="promo-vid">
+      	<div id="overlay"></div>
+    		<video id="video" autoplay loop muted>
+    			<source src="assets/home-video.mp4" type="video/mp4">
+    			<source src="assets/home-video.webm" type="video/webm">
+    			<source src="assets/home-video.ogv" type="video/ogv">
+    		</video>
+
+        <div class="headliner">
+          <div class="column row">
+            <h1 class="text-center">Your Personal Mixologist</h1>
+          </div>
+        </div>
+
+        <div class="header-content">
+          <div class="row">
+            <div class="medium-4 small-6 columns">
+              <a href="index.html"><img src="assets/logo.png" class="logo"></a>
+            </div>
+            <div class="medium-4 small-6 columns">
+              <a class="menu-icon float-right" data-open="mainMenu"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  	<!-- about me section -->
+
+    	<section class="about-me row">
+          <h1 class="header-about text-center">A Passion For Perfection</h1>
+      		<!-- <div data-toggler data-animate="fade-in fade-out" class="callout secondary">
+      		  <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+      		  </p>
+      		</div> -->
+
+          <p class="text-center">We are individuals with a passion for combining elixirs and creating extraordinary cocktails, whereas a bartender is individual with passion for making great drinks and creating well-balance experiences. As LA-Mixology we provide all our customers the best experience we can give. You and your quests will enjoy the finest service with the utmost of professional treatment. Your party can be as small as just a few quests in your living room, or as large as a huge Wedding or Fundraiser event.</p>
+
+
+    	</section>
+
+  	<!-- seperator image 1 -->
+      <section class="home-image1"></section>
+
+  	<!-- what is mixology section -->
+  	<section class="what-is-mixology">
+  		<div class="medium-6 columns empty"></div>
+  		<div class="medium-6 columns empty mainbg"></div>
+
+      <div class="mixology-content">
+        <div class="row">
+          <div class="medium-6 columns">
+            <h2>What Is Mixology?</h2>
+            <p>
+              Mixology is a term used to describe the art of mixing cocktail drink recipes.  A mixologist is a person who mixes and invents cocktail drinks. All mixologist are bartenders, but not all bartenders are mixologists.
+            </p>
+
+            <p>
+              We are not just regular Bartenders, we are the best of the best at our craft. We are the masters of the art of Mixology.
+            </p>
+          </div>
+
+        <!-- MODALS -->
+        <div class="reveal" id="galleryModal" data-close-on-click="true" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+          <img src="" id="imageContainer">
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- END OF MODAL -->
+
+          <div id="gallery" class="medium-6 columns">
+            <h2 class="white">
+              What We Do
+            </h2>
+            <div class="row small-up-3 medium-up-3 large-up-3">
+              <div class="column">
+                <a data-open="galleryModal">
+                  <img class="thumbnail"  src="assets/img/mixology-01.png">
+                </a>
+              </div>
+              <div class="column">
+                <a data-open="galleryModal">
+                  <img class="thumbnail" src="assets/img/mixology-02.png">
+                </a>
+              </div>
+              <div class="column">
+                <a data-open="galleryModal">
+                  <img class="thumbnail" src="assets/img/mixology-03.png">
+                </a>
+              </div>
+  			      <div class="column">
+                <a data-open="galleryModal">
+                  <img class="thumbnail" src="assets/img/mixology-03.png">
+                </a>
+              </div>
+              <div class="column">
+                <a data-open="galleryModal">
+                  <img class="thumbnail" src="assets/img/mixology-03.png">
+                </a>
+              </div>
+              <div class="column">
+                <a data-open="galleryModal">
+                  <img class="thumbnail" src="assets/img/mixology-03.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  	</section>
+
+
+      <!-- <section class="drinks row">
+        <h2 class="drinks-h2">Most Popular Drinks</h2>
+
+        <div class="medium-4 columns">
+          <div class="drinks-image">
+            <img src="assets/img/drinks-01.jpeg"  class="float-center">
+          </div>
+
+
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="drinks-image">
+            <img src="assets/img/drinks-02.jpeg"  class="float-center">
+          </div>
+
+        </div>
+
+        <div class="medium-4 columns">
+          <div class="drinks-image">
+            <img src="assets/img/drinks-03.jpeg"  class="float-center">
+          </div>
+        </div>
+
+        <!-- <div class="row columns mobile-button">
+      	  <a class="button">View All</a>
+      	</div>
+
+      </section> -->
+
+  	<!-- seperator image 2 -->
+      <section class="home-image2"></section>
+
+  	<!-- book me section -->
+  	<section class="booking row">
+  		<div class="large-8 large-centered columns text-center">
+  			<h2>Book Now</h2>
+  			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar lacinia lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec eu mauris eu est aliquam facilisis id sed felis. Aliquam in sodales sapien, id facilisis diam. Nullam vel purus eros. In eget velit quis purus laoreet cursus nec nec erat. Phasellus vel tellus ultrices, consectetur </p>
+  			<a data-open="modalBook" class="button">Book Now</a>
+  		</div>
+  	</section>
+
+    <!-- modal for the booking -->
+    <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+      <h2 class="text-center">Booking Form</h2>
+
+      <form data-abide novalidate>
+
+        <div class="alert callout" style="display:none;" data-abide-error>
+          <p><i class="fi-alert"></i> There're some problems in your form!</p>
+        </div>
+        <div class="row columns">
+          <label>Name:
+            <input type="text" placeholder="Your Name" required>
+            <span class="form-error">
+              <i class="fi-alert"></i> The name field is mandatory!!
+            </span>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Email:
+            <input type="text" placeholder="Your Email" required pattern="email">
+            <span class="form-error">
+              <i class="fi-alert"></i> The email field is mandatory!!
+            </span>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Phone Number:
+            <input type="text" placeholder="Your Phone Number" required pattern="number">
+            <span class="form-error">
+              <i class="fi-alert"></i> The phone field is mandatory!!
+            </span>
+          </label>
+        </div>
+        <div class="row columns">
+          <label>Message:
+            <textarea placeholder="Your Messages"></textarea>
+          </label>
+        </div>
+        <div class="row columns">
+          <input type="submit" class="button" value="Submit">
+
+          <!-- <button class="button success" type="reset" value="Reset">Reset</button> -->
+        </div>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </form>
+
+    </div>
+
+    <footer>
+      <div class="row">
+          <nav class="large-5 columns">
+            <ul class="vertical menu large-horizontal">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="packages.html">Packages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        <div class="contact-information large-3 columns">
+          <ul class="no-bullet vertical">
+            <li><i class="fi-marker"></i>17 Lake St, Bikini Bottom, NY, 13411</li>
+            <li><i class="fi-telephone"></i>555-555-5555</li>
+            <li><i class="fi-mail"></i>contact@mixologist.com</li>
+          </ul>
+        </div>
+        <div class="footer-about-us large-4 columns">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar lacinia lacinia. Orci varius natoque penatibus et magnis dis parturient montes</p>
+            <ul class="menu social align-right">
+              <li><a href="#"></a><i class="fi-social-youtube"></i></li>
+              <li><a href="#"></a><i class="fi-social-snapchat"></i></li>
+              <li><a href="#"></a><i class="fi-social-instagram"></i></li>
+              <li><a href="#"></a><i class="fi-social-twitter"></i></li>
+              <li><a href="#"></a><i class="fi-social-facebook"></i></li>
+            </ul>
+        </div>
+      </div>
+
+      <p class="text-center copyright">Mixologist. Copyright @2017. All rights reserved.</p>
+    </footer>
+
+  </div> <!-- off canvas content -->
+
+</div> <!-- off canvas inner -->
+
+</div><!-- off canvas wrapper -->
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/dist/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

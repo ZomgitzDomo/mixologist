@@ -1,0 +1,355 @@
+/*-------------------------------------
+| video sections
+-------------------------------------*/
+
+.promo-vid,
+.promo {
+    position: relative;
+
+    // .full-screen-image {
+    //     max-width: 100%;
+    //     height: auto;
+    // }
+
+    #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.6;
+        width: 100%;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9af98+0,845007+100&0.6+0,0.6+100 */
+        background: -moz-linear-gradient(top, rgba(201,175,152,0.6) 0%, rgba(132,80,7,0.6) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(201,175,152,0.6) 0%,rgba(132,80,7,0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(201,175,152,0.6) 0%,rgba(132,80,7,0.6) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c9af98', endColorstr='#99845007',GradientType=0 ); /* IE6-9 */
+    }
+
+    .header-content {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .headliner {
+        left: 0;
+        top: 50%;
+        position: absolute;
+        width: 100%;
+        color: $white;
+        transform: translateY(-50%);
+        h1 {
+            border-top: 2px solid $white;
+            border-bottom: 2px solid $white;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// .menu-icon, .menu-icon:hover {
+//     width:relm-calc(60);
+//     height:relm-calc(36);
+//     margin-top:relm-calc(25);
+//     &::after {
+//         background-color: $white;
+//         height: relm-calc(8);
+//         box-shadow: 0 28px 0 $white, 0 14px 0 $white;
+//     }
+// }
+
+.menu-icon {
+	@include hamburger($white, $white, 41px, 36px, 6px, 3);
+	margin-top: rem-calc(20);
+}
+
+.logo {
+    margin-top: 10px
+}
+/*-------------------------------------
+| about me sections
+-------------------------------------*/
+
+.about-me {
+	margin-top: 10px;
+    padding: 40px;
+    .header-about {
+        color: $main-color;
+        margin-bottom: 39px;
+
+    }
+
+	p {
+		line-height: 1.85em;
+	}
+}
+
+/*-------------------------------------
+| drinks section
+-------------------------------------*/
+.drinks {
+	margin-top: 10px;
+    // margin-right: 10px
+    padding: 40px;
+	color: $main-color;
+
+}
+
+.drinks-h2 {
+    margin-bottom: 40px;
+}
+
+.drinks-title {
+    opacity: 0;
+}
+
+.drinks-name {
+    font-size: 16px;
+}
+
+.home-image1 {
+    background-image:url(../assets/separators/small/stephen-smoked-1.jpg);
+    height: 200px;
+    background-position: center center;
+    background-attachment: scroll;
+
+    color: $white;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // line-height: 1.3em;
+    // font-weight: 300;
+    // padding-bottom: 51.5%;
+    @include breakpoint(medium) {
+        height: 350px;
+        background-size: cover;
+        background-image:url(../assets/separators/medium/stephen-smoked-1.jpg);
+
+    }
+    @include breakpoint(large){
+        background-size:cover;
+        background-image:url(../assets/separators/large/stephen-smoked-1.jpg);
+    }
+}
+
+.home-image2 {
+    background-image:url(../assets/separators/small/home-image2.jpg);
+    height: 200px;
+    background-position: center center;
+    background-attachment: scroll;
+
+    color: $white;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // line-height: 1.3em;
+    // font-weight: 300;
+    // padding-bottom: 51.5%;
+    @include breakpoint(medium) {
+        height: 350px;
+        background-size: cover;
+        background-image:url(../assets/separators/medium/home-image2.jpg);
+
+    }
+    @include breakpoint(large){
+        background-size:cover;
+        background-image:url(../assets/separators/large/home-image2.jpg);
+    }
+}
+
+/*-------------------------------------
+| what is mixology selection
+-------------------------------------*/
+.what-is-mixology {
+    @include breakpoint(medium) {
+        height: rem-calc(560);
+        position: relative;
+    }
+
+    @include breakpoint(medium) {
+        height: rem-calc(420);
+    }
+
+    .empty {
+        @include breakpoint(medium) {
+            height: rem-calc(560);
+
+        }
+
+        @include breakpoint(medium) {
+            height: rem-calc(420);
+        }
+    }
+    .mainbg {
+        // background-color: $second-color;
+    }
+
+    div.mixology-content {
+        margin-top: rem-calc(15);
+        @include breakpoint(medium) {
+            position: absolute;
+            top:rem-calc(20);
+            left:0;
+            width:100%;
+        }
+
+    }
+
+    h2 {
+		color: $main-color;
+	}
+
+}
+// .mixology-content {
+// 	padding:  rem-calc(40);
+// }
+
+/*-------------------------------------
+| booking section
+-------------------------------------*/
+section.booking {
+    padding:rem-calc(30);
+}
+
+.is-reveal-open .off-canvas-wrapper {
+	overflow-x: visible;
+}
+
+/*-------------------------------------
+| footer section
+-------------------------------------*/
+footer {
+    background-color: $primary-color;
+    padding-top: rem-calc(30);
+    color: $white;
+
+    .menu {
+        a {
+            color: $white;
+        }
+    }
+
+    .contact-information {
+        li {
+            position: relative;
+            height: 100px;
+            padding-left: 60px;
+            padding-top: 35px;
+
+            &:first-child {
+                padding-top: 22px;
+            }
+
+            i {
+                font-size: rem-calc(60);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .social {
+        i {
+            font-size: rem-calc(32);
+            margin: rem-calc(0 10);
+        }
+    }
+
+    p.copyright {
+        padding: rem-calc(20 0);
+        background-color: darken($primary-color, 5);
+        margin:0;
+    }
+}
+
+/*-------------------------------------
+| button sections
+-------------------------------------*/
+.drinks-button {
+    // margin-left: 200px;
+
+}
+
+.button {
+    @include button-style($second-color, darken($second-color, 10%), $white);
+
+    text-transform:uppercase;
+	font-weight:bold;
+	font-size: rem-calc(16);
+	margin: rem-calc(20 0);
+    padding: rem-calc(20 40);
+}
+
+.button.reset {
+    @include button-hollow;
+
+    border:2px solid $second-color;
+    color: $second-color
+}
+
+/*-------------------------------------
+| off canvas
+-------------------------------------*/
+div.off-canvas {
+    height: 100%;
+
+    a, h3 {
+        color: $white;
+    }
+
+    .is-drilldown-submenu {
+        background-color: darken($primary-color, 15);
+    }
+}
+
+/*-------------------------------------
+| about page css
+-------------------------------------*/
+section.content {
+    padding: rem-calc(30 0);
+}
+
+.small-about-me {
+    margin-top: rem-calc(20);
+}
+
+/*-------------------------------------
+| service-page
+-------------------------------------*/
+// .service-margin {
+//     margin-top: rem-calc(10);
+// }
+
+section.services-content .content-text {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/*-------------------------------------
+| screens
+-------------------------------------*/
+
+@media screen and (max-width: 767px){
+    #main-img{
+        content:url("assets/mobile-about.jpg");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #main-img{
+       content:url("assets/tablet-about.jpg");
+     }
+}
+@media (min-width: 992px){
+      #main-img{
+          content:url("assets/desktop-about.jpg");
+      }
+}
+@media (min-width: 2200px) {
+     #main-img{
+         content:url("assets/about.jpg");
+     }
+ }
+
+
